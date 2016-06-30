@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webcam test</title>
+    </head>
+    <body>
+        <script src="lib/webcam.js"></script>
+        <script>
+            var webcam = new Webcam(320, 240);
+            document.body.appendChild(webcam.domElement);
+
+            function startWebcam() {
+                webcam.start();
+            }
+
+            function stopWebcam() {
+                webcam.stop();
+            }
+        </script>
+
+        <a href="javascript:startWebcam()">start webcam</a>
+        <a href="javascript:stopWebcam()">stop webcam</a>
+    </body>
+</html>
